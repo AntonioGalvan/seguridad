@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--================= Datos =================-->
+    <meta name="Seguridad Informatica" content="Tesis en seguridad informática">
+    <meta name="description" content="Herramientas de seguridad para sitios web">
+
+    <!--================= Icono pestaña =================-->
+    <link rel="shortcut icon" href="img/dragon.webp">
+
+    <!--================= Fuentes =================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!--================= CSS =================-->
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleA.css">
+
+    
+    
+    <title>Seguridad informática</title>
+</head>
+
+<body>
+<!--================= Header =================-->
+<header class="main-menu" id="main-menu"> 
+    <div class="main-menu__container container">
+
+    <a class="main-menu__alogo" href="index.php">
+        <img class="main-menu__logo" src="img/logo-min.webp" alt="Noctua logo">
+    </a>
+        
+    <button class="main-menu__icon" id="menu__icon"></button>
+    
+    <nav class="main-menu__nav">
+        <ul>
+            <li>
+                <a class="main-menu__link" href="#">Inicio</a>
+            </li>
+            <li>
+                <a class="main-menu__link" href="#proyecto">Proyecto</a>
+            </li>
+            <li>
+                <a class="main-menu__link" href="#herramientas" >Herramientas</a>
+            </li>
+            <li>
+                <a class="main-menu__link" href="#contacto">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+
+    </div>
+</header>
+
+<!--================= Página principal =================-->
+<main>
+    <!--================= Home =================-->
+<section class="home" id="home">
+    <div class="container">
+        <div class="home__container">
+            <div class="home__informacion black left">
+                <h2 class="nta-title nta-title-lg white">Seguridad en tu Página Web</h2>
+                <p class="nta-text nta-text-sm white">En este proyecto conocerás eficaces herramientas de seguridad informática en sitios web</p>
+    
+                <div class="home__buttons">
+                    <a href="" class="nta-btn-primary">Conócelo</a>
+                    <a href="" class="nta-btn-common">Ver Video</a>
+                </div>
+            </div>
+            <img class="home__img" src="img/dragon.webp" alt="Imágen ONU">
+        </div>
+        <div id="proyecto"></div>
+        <div class="call-to-action">
+            <img class="call-to-action__icon" src="img/svg/download.svg" alt="">
+            <div class="center">
+                <h2 class="nta-title nta-title-sm secondary">Descarga el archivo completo</h2>
+                <p class="nta-text nta-text-sm">Si buscas un poco más de información para revisar en profundidad el tema aquí tienes disponible el archivo. También es necesario aclarar que para utilizar las siguientes herramientas es necesario utilizar el SO kali-linux</p>
+            </div>
+            <a href="" class="nta-btn-secondary">Descargar</a>
+        </div>
+    </div>
+</section>
+
+<div id="herramientas"></div>
+<section class="text-img-2c" id="text-img-2c">
+    <div class="container">
+        <h2 class="nta-title nta-title-lg center darken">HERRAMIENTAS</h2>
+        <div class="text-img-2c__container">
+            <div class="text-img-2c__informacion darken left">
+                <div class="text-img-2c__informacion-block">
+                    <h2 class="nta-title nta-title-md darken"><div class="text-img-2c__vp"></div> Nikto</h2>
+                    <p class="nta-text nta-text-sm darken">Es un escáner de servidor web de código abierto, que realiza un escaneo de vulnerabilidades para buscar múltiples elementos como archivos y programas maliciosos, también comprueba si hay software obsoleto y busca errores en la configuración del servidor. </p>
+                </div>
+
+                <div class="text-img-2c__informacion-block">
+                    <h2 class="nta-title nta-title-xs primary"><img class="text-img-2c__icon" src="img/svg/code.svg" alt=""> Archivos maliciosos</h2>
+                    <p class="nta-text nta-text-sm">Nikto Es capaz de detectar más de 6700 archivos maliciosos.</p>
+                </div>
+
+                <div class="text-img-2c__informacion-block">
+                    <h2 class="nta-title nta-title-xs primary"><img class="text-img-2c__icon" src="img/svg/code.svg" alt=""> Software obsoleto</h2>
+                    <p class="nta-text nta-text-sm">analizando las versiones de los servidores, puede encontrar versiones desactualizadas e invluso encontrar fallos sobre versiones específicas. </p>
+                </div>
+
+                <div class="text-img-2c__informacion-block">
+                    <h2 class="nta-title nta-title-xs primary"><img class="text-img-2c__icon" src="img/svg/code.svg" alt=""> Errores de configuración</h2>
+                    <p class="nta-text nta-text-sm">Durante el análisis del servidor Nikto también obtiene las configuraciones del mismo, facilitando la tarea de detectar una mala configuración.</p>
+                </div>
+
+            </div>
+            <div class="text-img-2c__console">
+                <img class="text-img-2c__console-img" src="img/kali-dragon.webp" alt="">
+
+                <div class="text-img-2c__console-display" id="console-display1">
+                    <p class="nta-text nta-text-xs code-pro-bold cs-red ">kali@kali: ~$ <span class="white console-text code-pro" id="nikto"></span></p>
+                    
+                </div>
+            
+            </div>
+        </div>
+
+        <div class="text-img-2c__video container">
+            <iframe class="text-img-2c__video-iframe" src="https://www.youtube.com/embed/GH9qn_DBzCk" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+</section>
+
+<section class="accordion">
+    <div class="container">
+        <div class="accordion__container">
+            <h2 class="nta-title nta-title-md darken"><div class="accordion__vp"></div> Nessus</h2>
+            <p class="nta-text nta-text-sm darken">Es una herramienta que hace un escaneo para encontrar puertos abiertos en un servidor y después intenta diferentes exploits para atacarlo, hace uso del escáner nmap y de uno propio de Nessus.</p>
+        </div>
+
+        <div class="accordion__box">
+            <div class="accordion__prev">
+                <div class="accordion__prev-name">
+                    <img src="img/svg/shield.svg" alt="">
+                    <h3 class="nta-title nta-title-xs">Plantillas Diseñadas</h3>
+                </div>
+                <img class="accordion__prev-chev" src="img/svg/chevron-down.svg" alt="">
+            </div>
+
+            <div class="accordion__info">
+                <p class="nta-text nta-text-sm">Nessus incluye plantillas preconfiguradas, que le ayudan a detectar en dónde hay vulnerabilidades, algunas incluyen un escaneado avanzado, auditoría de infrestructura de nube, detección de host, escaneado de malware.</p>
+            </div>
+        </div>
+
+        <div class="accordion__box">
+            <div class="accordion__prev">
+                <div class="accordion__prev-name">
+                    <img src="img/svg/shield.svg" alt="">
+                    <h3 class="nta-title nta-title-xs">Informes y solución de problemas personalizable</h3>
+                </div>
+                <img class="accordion__prev-chev" src="img/svg/chevron-down.svg" alt="">
+            </div>
+
+            <div class="accordion__info">
+                <p class="nta-text nta-text-sm">Las capacidades de elaboración de informes pueden optimizarse para satisfacer necesidades específicas y los informes se pueden exportar en los formatos más adecuados.</p>
+            </div>
+        </div>
+
+        <div class="accordion__box">
+            <div class="accordion__prev">
+                <div class="accordion__prev-name">
+                    <img src="img/svg/shield.svg" alt="">
+                    <h3 class="nta-title nta-title-xs">Multiplataforma</h3>
+                </div>
+                <img class="accordion__prev-chev" src="img/svg/chevron-down.svg" alt="">
+            </div>
+
+            <div class="accordion__info">
+                <p class="nta-text nta-text-sm">Nessus puede ser implementado en diversas plataformas, incluyendo Raspberry Pi. Esto lo hace totalmente portatil.</p>
+            </div>
+        </div>
+
+
+        <div class="text-img-2c__video">
+            <iframe class="text-img-2c__video-iframe" src="https://www.youtube.com/embed/QjA4EJ8M6ms" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+</section>
+
+<section class="text-img-2c" id="text-img-2c">
+    <div class="container">
+        
+        <div class="text-img-2c__container">
+            <div class="text-img-2c__console">
+                <img class="text-img-2c__console-img" src="img/kali-dragon.webp" alt="">
+    
+                <div class="text-img-2c__console-display" id="console-display2">
+                    <p class="nta-text nta-text-xs code-pro-bold cs-red ">kali@kali: ~$ <span class="white console-text code-pro" id="sqlmap"></span></p>
+                    
+                </div>
+            </div>
+
+            <div class="text-img-2c__informacion darken left">
+                <div class="text-img-2c__informacion-block">
+                    <h2 class="nta-title nta-title-md darken"><div class="text-img-2c__vp"></div> SQLmap</h2>
+                    <p class="nta-text nta-text-sm darken">Es una herramienta la cual ayuda a testear/automatizar la detección y explotación de inyecciones SQL, recuperar las tablas que hay en una base de datos, entre otros.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-img-2c__video">
+            <iframe class="text-img-2c__video-iframe" src="https://www.youtube.com/embed/2y70Yj0oSxw?si=XhRA2qguwcpyHw02" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+</section>
+
+<section class="text-img-2c" id="text-img-2c">
+    <div class="container">
+        <div class="text-img-2c__container">
+            <div class="text-img-2c__informacion darken left">
+                <div class="text-img-2c__informacion-block">
+                    <h2 class="nta-title nta-title-md darken"><div class="text-img-2c__vp"></div> Nmap</h2>
+                    <p class="nta-text nta-text-sm darken">Es una herramienta que es empleada para el descubrimiento de redes con el fin de detectar los puertos que una aplicación web tiene abiertos, ya que muchos pueden ser obsoletos y pocos seguros porque carecen de la encriptación de los datos. </p>
+                </div>
+            </div>
+            <div class="text-img-2c__console">
+                <img class="text-img-2c__console-img" src="img/kali-dragon.webp" alt="">
+    
+                <div class="text-img-2c__console-display" id="console-display3">
+                    <p class="nta-text nta-text-xs code-pro-bold cs-red ">kali@kali: ~$ <span class="white console-text code-pro" id="nmap"></span></p>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="text-img-2c__video">
+            <iframe class="text-img-2c__video-iframe" src="https://www.youtube.com/embed/4t4kBkMsDbQ" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+</section>
+
+<section class="text-img-2c" id="text-img-2c">
+    <div class="container">
+        <div class="text-img-2c__container">
+            <div class="text-img-2c__informacion darken left sticky">
+                <div class="text-img-2c__informacion-block">
+                    <h2 class="nta-title nta-title-md darken"><div class="text-img-2c__vp"></div> FOCA</h2>
+                    <p class="nta-text nta-text-sm darken">Es una herramienta que sirve para la extracción de metadatos de cualquier tipo de documento (documentos de texto, imágenes, vídeos, entre otros.) que se encuentra en una aplicación web. Este se utiliza por medio de una interfaz gráfica.</p>
+                </div>
+            </div>
+            <div class="text-img-2c__informacion">
+                <img class="text-img-2c__img" src="img/Imagen1-min.webp" alt="">
+                <img class="text-img-2c__img" src="img/Imagen2-min.webp" alt="">
+                <img class="text-img-2c__img" src="img/Imagen3-min.webp" alt="">
+                <img class="text-img-2c__img" src="img/Imagen4-min.webp" alt="">
+            </div>
+        </div>
+        
+        <div class="text-img-2c__video">
+            <iframe class="text-img-2c__video-iframe" src="https://www.youtube.com/embed/lhib-XFcp6Y" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+</section>
+
+<section class="text-img-2c" id="text-img-2c">
+    <div class="container">
+        <div class="text-img-2c__container">
+            <div class="text-img-2c__console ettercap__console">
+                <img class="text-img-2c__console-img" src="img/kali-dragon.webp" alt="">
+
+                <div class="text-img-2c__console-display" id="console-display4">
+                    <p class="nta-text nta-text-xs code-pro-bold cs-red ">kali@kali: ~$ <span class="white console-text code-pro" id="ettercap"></span></p>
+                    
+                </div>
+            </div>
+            <div class="text-img-2c__informacion ettercap__img invisible">
+                <img class="text-img-2c__img" src="img/ettercap.png" alt="">
+            </div>
+            <div class="text-img-2c__informacion darken left">
+                <div class="text-img-2c__informacion-block">
+                    <h2 class="nta-title nta-title-md darken"><div class="text-img-2c__vp"></div> Ettercap</h2>
+                    <p class="nta-text nta-text-sm darken">Es una herramienta que es capaz de lanzar ataques Man-in-the-Middle, también se utiliza para el análisis de una red y auditorias de seguridad. </p>
+                </div>
+
+                <div class="text-img-2c__informacion-block">
+                    <h2 class="nta-title nta-title-xs primary"><img class="text-img-2c__icon" src="img/svg/code.svg" alt=""> Compatibilidad con SSH1</h2>
+                    <p class="nta-text nta-text-sm">Puede interceptar users y passwords incluso en conexiones "seguras" con SSH.</p>
+                </div>
+
+                <div class="text-img-2c__informacion-block">
+                    <h2 class="nta-title nta-title-xs primary"><img class="text-img-2c__icon" src="img/svg/code.svg" alt=""> Compatibilidad con HTTPS</h2>
+                    <p class="nta-text nta-text-sm">Intercepta conexiones mediante http SSL (supuestamente seguras) incluso si se establecen a través de un proxy.</p>
+                </div>
+
+                <div class="text-img-2c__informacion-block">
+                    <h2 class="nta-title nta-title-xs primary"><img class="text-img-2c__icon" src="img/svg/code.svg" alt=""> Inyección de caracteres</h2>
+                    <p class="nta-text nta-text-sm">En una conexión establecida emulando comandos o respuestas mientras la conexión está activa.</p>
+                </div>
+
+            </div>
+            
+        </div>
+        <!--
+        <div class="text-img-2c__video">
+            <iframe class="text-img-2c__video-iframe" src="https://www.youtube.com/embed/NIUkYKHsL50" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        </div>
+        -->
+    </div>
+</section>
+
+
+
+
+
+<div id="contacto"></div>
+<section class="text-img-2c" id="text-img-2c">
+    <div class="container">
+        <div class="text-img-2c__container contact__container">
+            <div class="contact__bg">
+                
+                <img class="text-img-2c__img contact__img" src="img/profile.jpeg" alt="Imagen de contacto">
+            </div>
+
+            <div class="text-img-2c__informacion darken left">
+                <div class="text-img-2c__informacion-block">
+                    <h2 class="nta-title nta-title-lg darken"><div class="text-img-2c__vp contact__vp"></div> Sobre Jesús<br>Christopher</h2>
+                    <p class="nta-text nta-text-sm darken">Información</p>
+
+                    <div class="text-img-2c__informacion-block">
+                        <p class="nta-text nta-text-sm primary"><img class="text-img-2c__icon" src="img/svg/phone.svg" alt=""> <strong>22334785</strong></p>
+                    </div>
+                    <div class="text-img-2c__informacion-block">
+                        <p class="nta-text nta-text-sm primary"><img class="text-img-2c__icon" src="img/svg/envelope.svg" alt=""> <strong>correo@gmail.com</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer__container container">
+        <p class="nta-text nta-text-sm white">Seguridad Informática</p>
+        <p class="nta-text nta-text-sm white">2022</p>
+    </div>
+</footer>
+</main> 
+
+
+</body>
+</html>
+
+
+
+<script src="js/menu.js"></script>
+
+<script src="js/accordion.js"></script>
+<script src="js/console.js"></script>
+<script src="js/video.js"></script>

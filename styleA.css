@@ -1,0 +1,10 @@
+.text-img-2c__video{
+    padding: 0 !important;
+    height: 500px ;
+    min-height: 200px;
+}
+@media (max-width: 600px) {
+    .text-img-2c__video{
+        height: auto;
+    }
+ }
